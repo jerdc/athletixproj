@@ -285,6 +285,9 @@
 	.footer-social {
 		text-align: center;
 	}
+	.thumb-img-wrap {
+		max-height: 250px;
+	}
 }
 
 @media (min-width: 481px) and (max-width : 767px) {
@@ -407,6 +410,15 @@
 	}
 	.entry-review {
 		padding: 0;
+	}
+	.item.list-group-item 
+	.list-group-image {
+	   width: 100% !important;
+	   margin-right: 0; 
+	   margin-bottom: 20px;
+	}
+	.thumb-img-wrap {
+		max-height: 250px;
 	}
 }
 
