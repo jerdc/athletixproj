@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    
+		<title>ATHLETIX</title>
+		
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/media.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css">
+	</head>
+	<body>
+		<div id="mainNav">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					   <a class="navbar-brand" href="index.html">ATHLETIX</a>
+			   	</div>
+			    	<div class="collapse navbar-collapse" id="navbarCollapse">
+			      	<ul class="nav navbar-nav">
+					      <li><a href="index.html">Home</a></li>
+			            <li><a href="events.html">Events</a></li>
+			            <li><a href="directory-listing.html">Directory Listing</a></li>
+			             <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="articles.html">Articles</a></li>
+								</ul>
+							</li>
+			            <li><a href="contact.html">Contact Us</a></li>
+			      	</ul>
+						<ul class="nav navbar-nav navbar-right avatar">
+							<li class="dropdown dropdown-menu-right">
+								<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true" href="#">
+									<img src="assets/img/avatar.jpg" class="img-responsive">
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right" role="menu">
+									<li><a href="dashboard.html"><i class="fa fa-tachometer fa-fw" aria-hidden="true"></i>Dashboard</a></li>
+									<li><a href="create-event.html"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>Add Event</a></li>
+									<li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Settings</a></li>
+									<li><a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Edit Profile</a></li>
+									<li><a href="#"><i class="fa fa-feed fa-fw" aria-hidden="true"></i>Activity Feed</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="index.html"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+	<!-- 		<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+			   	<div class="navbar-header">
+			   		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+			      	</button>
+			      	<a class="navbar-brand" href="index.html">ATHLETIX</a>
+			   	</div>
+			    	<div class="collapse navbar-collapse" id="navbarCollapse">
+			      	<ul class="nav navbar-nav">
+					      <li><a href="index.html">Home</a></li>
+			            <li><a href="events.html">Events</a></li>
+			            <li><a href="directory-listing.html">Directory Listing</a></li>
+			            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="articles.html">Articles</a></li>
+								</ul>
+							</li>
+			            <li><a href="contact.html">Contact Us</a></li>
+			      	</ul>
+			      	<ul class="nav navbar-nav navbar-right">
+			      		<li><button type="button" class="btn btn-link btn-grey" data-toggle="modal" data-target="#login">Log In</button></li>
+			      		<li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#register">Register</button></li>
+			      	</ul>
+			      </div>
+			   </div>
+			</nav> -->
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				   <div class="modal-dialog" role="document">
+				   	<div class="modal-content">
+					      <div class="modal-header">
+						      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						      <h4 class="modal-title" id="login">Log in to your account</h4>
+					      </div>
+					      <div class="modal-body">
+					      	<div class="social-login">
+					      		<div class="row">
+					      			<div class="col-md-6 mb10">
+				            			<a href="" class="btn btn-block btn-facebook"><i class="fa fa-facebook"></i>Log in with Facebook</a>
+					      			</div>
+					      			<div class="col-md-6">
+				            			<a href="" class="btn btn-block btn-linkedin"><i class="fa fa-linkedin"></i>Log in with LinkedIn</a>
+					      			</div>
+					      		</div>
+			            	</div>
+			            	<div class="strikethru">
+									<div class="sep"></div>
+									<div class="text"><span>or</span></div>
+			            	</div>
+						     	<form class="modal-form">
+									<div class="form-group">
+										<input type="email" class="form-control" id="InputPassword" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="Password">
+									</div>						  
+								   <button type="submit" class="btn btn-primary">Log In</button>
+						  			<div class="checkbox">
+										<label><input type="checkbox">Remember Me</label>
+								   </div>
+								   <div class="help-block bhvr pull-right">
+								  		<a href="">Forgot Password?</a>
+								   </div>
+								</form>
+					      </div>
+					      <div class="modal-footer">
+								<p class="text-center pmb0 bhvr">New to Athletix? <a href="#"><strong>Register</strong></a></p>
+					      </div>
+				    	</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				   <div class="modal-dialog" role="document">
+				      <div class="modal-content">
+					      <div class="modal-header">
+						      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						      <h4 class="modal-title" id="register">Register for a new account</h4>
+					      </div>
+					      <div class="modal-body">
+					      	<form class="modal-form">
+									<div class="form-group">
+										<input type="name" class="form-control" id="InputName" placeholder="Name">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="InputPassword" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="Re-enter Password">
+									</div>
+									<button type="submit" class="btn btn-primary">Sign Up</button>
+								</form>
+								<div class="disclaimer text-center">
+									<p class="pmb0 bhvr">By registering, you agree to our 
+										<a href="#" target="_blank">Terms of Service</a>, and 
+										<a href="#" target="_blank">Privacy Policy</a>.
+									</p>
+								</div>
+					   	</div>
+					      <div class="modal-footer">
+					      	<p class="text-center pmb0 bhvr">Already have an account? <a href="#"><strong>Log In</strong></a></p>
+					      </div>
+				    	</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron hidden-xs">
+			<div class="container">
+				<div class="row">
+					<h1 class="text-center">News</h1>
+				</div>
+			</div>
+		</div>
+		<div id="entry" class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-9 col-md-9">
+						<div class="entry-content clearfix">
+							<div class="entry-content-img">	<!--Ideal image size = 900px X 480px -->
+								<img src="assets/img/p1.jpg" class="img-responsive">
+							</div>
+							<div class="entry-content-heading">
+								<h3>News</h3>
+								<ul>
+									<li><i class="fa fa-user fa-fw" aria-hidden="true"></i>By: <a href="#">Juan Dela Cruz</a></li>
+									<li><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>28 April, 2016</li>
+									<li class="hidden-xs"><i class="fa fa-bars fa-fw" aria-hidden="true"></i>Category : <a href="#">Category Name</a></li>
+									<li class="hidden-xs"><i class="fa fa-comments-o fa-fw" aria-hidden="true"></i>Comments : <a href="#">1</a></li>
+								</ul>
+							<hr>
+							</div>
+							<div class="entry-content-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus orci vitae dignissim tempus. In sollicitudin luctus nunc, nec cursus est consequat nec. Nulla ipsum lorem, pretium et tincidunt id, porttitor porttitor arcu. Nunc sed arcu leo. Nullam dignissim nibh at arcu mattis, non pretium felis mattis. Aliquam pretium dignissim diam, a pretium felis consectetur ut. Curabitur cursus molestie nisi in efficitur. Integer id placerat sem. Nunc sit amet nulla commodo, aliquam arcu vitae, vestibulum nisi. Nam gravida ac lorem sed efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eleifend massa risus, id commodo lectus molestie id.
+								</p>
+								<blockquote class="pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus orci vitae dignissim tempus. In sollicitudin luctus nunc, nec cursus est consequat nec. Nulla ipsum lorem, pretium et tincidunt id, porttitor porttitor arcu. Nunc sed arcu leo. Nullam dignissim nibh at arcu mattis, non pretium felis mattis.
+								</blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus orci vitae dignissim tempus. In sollicitudin luctus nunc, nec cursus est consequat nec. Nulla ipsum lorem, pretium et tincidunt id, porttitor porttitor arcu. Nunc sed arcu leo. Nullam dignissim nibh at arcu mattis, non pretium felis mattis. Aliquam pretium dignissim diam, a pretium felis consectetur ut. Curabitur cursus molestie nisi in efficitur.
+								</p>
+							</div>
+						</div>
+						<hr>
+						<div class="related-entry hidden-xs">
+							<h4>Related News</h4>
+							<div class="row">
+								<div class="col-sm-4 col-md-4">
+									<div class="entry-preview">
+										<div class="entry-preview-img"> <!-- 400px X 250px -->
+											<img src="assets/img/t1.jpg" class="img-responsive">
+										</div>
+										<div class="entry-preview-content">
+											<h3>News</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante at ante aliquam accumsan vel quis lorem. Aenean a cursus odio.</p>
+											<a href="news-detail.html">
+												<button type="submit" class="btn btn-more">Read more</button>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-4">
+									<div class="entry-preview">
+										<div class="entry-preview-img"> <!-- 400px X 250px -->
+											<img src="assets/img/t1.jpg" class="img-responsive">
+										</div>
+										<div class="entry-preview-content">
+											<h3>News</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante at ante aliquam accumsan vel quis lorem. Aenean a cursus odio.</p>
+											<a href="news-detail.html">
+												<button type="submit" class="btn btn-more">Read more</button>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-4">
+									<div class="entry-preview">
+										<div class="entry-preview-img"> <!-- 400px X 250px -->
+											<img src="assets/img/t1.jpg" class="img-responsive">
+										</div>
+										<div class="entry-preview-content">
+											<h3>News</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante at ante aliquam accumsan vel quis lorem. Aenean a cursus odio.</p>
+											<a href="news-detail.html">
+												<button type="submit" class="btn btn-more">Read more</button>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="leave-comments clearfix">
+							<h4>Leave a comment</h4>
+                  	<form class="form-horizontal comment-form">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                              	<div class="col-md-12">
+                                 	<input type="text" class="form-control" id="commentName" placeholder="Name">
+                                 </div>
+                              </div>
+                           </div>
+                          	<div class="col-md-6">
+                              <div class="form-group">
+                              	<div class="col-md-12">
+                              		<input type="email" class="form-control" id="commentEmail" placeholder="Email">
+                              	</div>
+                              </div>
+                         	</div>
+                        </div>
+                    	 	<div class="form-group">
+                       		<div class="col-md-12">                 
+                        		<textarea class="form-control" id="commentMsg" rows="5" placeholder="Leave a comment"></textarea>
+                       		</div>
+                     	</div>
+                     	<div class="form-group">
+                      		<div class="col-md-12">
+                        		<button class="btn btn-more">Send Message</button>
+                       		</div>
+                    		</div>
+                    	</form>
+						</div>
+						<hr>
+						<div class="comments clearfix">
+							<ul class="media-list">
+								<li class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="https://randomuser.me/api/portraits/men/84.jpg" alt="">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Name goes here <span class="hidden-xs"><small> October 1, 2016</small></span></h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante at ante aliquam accumsan vel quis lorem. Aenean a cursus odio. Aenean non ante commodo, posuere justo ut, aliquet mi. Aliquam vel cursus urna.</p>
+										<p class="reply"><a href="#" class="btn btn-default btn-xs"><i class="fa fa-reply"></i>reply</a></p>
+										<div class="media">
+											<a class="pull-left" href="#">
+												<img class="media-object img-circle" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+											</a>
+											<div class="media-body">
+												<h4 class="media-heading">Name goes here <span class="hidden-xs"><small> October 1, 2016</small></span></h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante at ante aliquam accumsan vel quis lorem. Aenean a cursus odio. Aenean non ante commodo, posuere justo ut, aliquet mi. Aliquam vel cursus urna.</p>
+												<p class="reply"><a href="#" class="btn btn-default btn-xs"><i class="fa fa-reply"></i>reply</a></p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="https://randomuser.me/api/portraits/women/57.jpg" alt="">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Name goes here <span class="hidden-xs"><small> October 1, 2016</small></span></h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante at ante aliquam accumsan vel quis lorem. Aenean a cursus odio. Aenean non ante commodo, posuere justo ut, aliquet mi. Aliquam vel cursus urna.</p>
+										<p class="reply"><a href="#" class="btn btn-default btn-xs"><i class="fa fa-reply"></i>reply</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="sidebar">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+								</span>
+							</div>
+						</div>
+						<div class="sidebar">
+							<h3>Categories</h3>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href='#'>Category</a></li>
+					         <li><a href='#'>Category</a></li>
+					         <li><a href='#'>Category</a></li>
+							</ul>
+						</div>
+						<div class="sidebar">
+							<h3>Archives</h3>
+							<div class="archives">
+								<table class="sidebar-table">
+									<tbody>
+										<tr>
+											<td><a href="#">Month Year</a></td>
+											<td><span class="pull-right">(3)</span></td>
+										</tr>
+										<tr>
+											<td><a href="#">Month Year</a></td>
+											<td><span class="pull-right">(3)</span></td>
+										</tr>
+										<tr>
+											<td><a href="#">Month Year</a></td>
+											<td><span class="pull-right">(3)</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    	<footer>
+	    	<div class="footer-top">
+		    	<div class="container">
+			   	<div class="row">
+		    			<div class="col-xs-12 col-sm-12 col-md-6">
+			    			<div class="footer-about">
+				    			<h3>Athletix</h3>
+				    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio mauris, imperdiet vehicula tellus ac, rutrum feugiat nisl. Etiam varius nunc in eros cursus, blandit elementum tortor semper. In magna nisl, ultricies in odio vitae, dignissim tristique erat.</p>
+			    			</div>
+		    			</div>
+				    	<div class="col-xs-12 col-sm-4 col-md-2">
+					    	<div class="footer-qlinks">
+					    		<h4>Quick Links</h4>
+						    	<ul>
+							    	<li><a href="index.html">Home</a></li>
+							    	<li><a href="events.html">Events</a></li>
+							    	<li><a href="#" >Directory Listing</a></li>
+							    	<li><a href="#">News</a></li>
+							    	<li><a href="contact.html">Contact Us</a></li>
+						    	</ul>
+					    	</div>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-4 col-md-2">
+					    	<div class="footer-qlinks">
+						    	<h4>Quick Links</h4>
+						    	<ul>
+							    	<li><a href="index.html">Home</a></li>
+							    	<li><a href="events.html">Events</a></li>
+							    	<li><a href="#">Directory Listing</a></li>
+							    	<li><a href="#">News</a></li>
+							    	<li><a href="contact.html">Contact Us</a></li>
+						    	</ul>
+					    	</div>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-4 col-md-2">
+					    	<div class="footer-qlinks">
+					    		<h4>Quick Links</h4>
+						    	<ul>
+							    	<li><a href="index.html">Home</a></li>
+							    	<li><a href="events.html">Events</a></li>
+							    	<li><a href="#" >Directory Listing</a></li>
+							    	<li><a href="#">News</a></li>
+							    	<li><a href="contact.html">Contact Us</a></li>
+						    	</ul>
+					    	</div>
+					   </div>
+				   </div>
+			   </div>
+			</div>
+	    	<div class="footer-bottom">
+	    		<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-sm-6 col-xs-12">
+			    			<p class="copyright pmb0">Copyright © 2016 Athletix. All Rights Reserved.</p>
+		    			</div>
+		    			<div class="col-md-4 col-sm-6 col-xs-12">
+			    			<div class="footer-social pull-right">
+					    		<ul>
+						    		<li><a href="https://www.facebook.com/" target="_blank" title="Follow us on Facebook"><i class="fa fa-facebook"></i></li>
+						    		<li><a href="https://www.linkedin.com/" target="_blank" title="Follow us on LinkedIn"><i class="fa fa-linkedin"></i></li>
+					    		</ul>
+			    			</div>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>
+    	</footer>
+    
+    	<script>
+    	</script> 
+    	
+	</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    
+		<title>ATHLETIX</title>
+		
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/media.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+	</head>
+	<body>
+		<div id="dashboard">
+			<nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+		   		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+		      	</button>
+		      	<a class="navbar-brand" href="index.html">ATHLETIX</a>
+		   	</div>
+				<ul class="nav navbar-right top-nav">
+            	<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                  <ul class="dropdown-menu message-dropdown">
+                     <li class="message-preview">
+                        <a href="#">
+                           <div class="media">
+                              <span class="pull-left">
+                              	<img class="media-object" src="http://placehold.it/50x50" alt="">
+                              </span>
+                              <div class="media-body">
+                               	<h5 class="media-heading"><strong>Juan Dela Cruz</strong>
+                               	</h5>
+                               	<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                               	<p>Lorem ipsum dolor sit amet, consectetur...</p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="message-preview">
+                        <a href="#">
+                          	<div class="media">
+                              <span class="pull-left">
+                              	<img class="media-object" src="http://placehold.it/50x50" alt="">
+                              </span>
+                              <div class="media-body">
+                                 <h5 class="media-heading"><strong>Juan Dela Cruz</strong>
+                                 </h5>
+                                 <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                              </div>
+                          	</div>
+                        </a>
+                     </li>
+                     <li class="message-preview">
+                      	<a href="#">
+                          	<div class="media">
+                              <span class="pull-left">
+                              	<img class="media-object" src="http://placehold.it/50x50" alt="">
+                              </span>
+                              <div class="media-body">
+                                 <h5 class="media-heading"><strong>Juan Dela Cruz</strong>
+                                 </h5>
+                                 <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                              </div>
+                          	</div>
+                      	</a>
+                     </li>
+                     <li class="message-footer">
+                     	<a href="#">Read All New Messages</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                  <ul class="dropdown-menu alert-dropdown">
+                     <li><a href="#">Notification</a></li>
+                     <li><a href="#">Notification</a></li>
+                     <li><a href="#">Notification</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">View All</a></li>
+                 	</ul>
+               </li>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Juan Dela Cruz <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+							<li><a href="dashsettings.html"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Settings</a></li>
+							<li><a href="dashuser-profile.html"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>User Profile</a></li>
+							<li><a href="dashboard.html"><i class="fa fa-feed fa-fw" aria-hidden="true"></i>Activity Feed</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="index.html"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>Logout</a></li>
+                  </ul>
+               </li>            
+            </ul>
+            <div class="navbar-collapse navbar-ex1-collapse collapse">
+               <ul class="nav navbar-nav side-nav">
+                  <li><a href="dashboard.html"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
+                  <li><a href="dashmanage-events.html"><i class="fa fa-calendar fa-fw"></i> Manage Events</a></li>
+                  <li><a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-users fa-fw"></i> Manage Teams <i class="fa fa-fw fa-caret-down"></i></a>
+                     <ul id="demo" class="collapse">
+                        <li><a href="dashcreate-team.html"><i class="fa fa-user-plus fa-fw"></i> Create Team</a></li>
+                        <li><a href="dashregister-team.html"><i class="fa fa-users fa-fw"></i> Register Team</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="dashmanage-blogs.html"><i class="fa fa-comments fa-fw"></i> Manage Blogs</a></li>
+                  <li><a href="dashinbox.html"><i class="fa fa-inbox fa-fw"></i> Inbox</a></li>
+                  <li><a href="dashsettings.html"><i class="fa fa-cog fa-fw"></i> Settings</a></li>
+                  <li><a href="index.html"><i class="fa fa-arrow-left fa-fw"></i> Back to Main</a></li>
+               </ul>
+            </div>
+			</nav>
+			<div id="dashboardMain">
+         	<div class="container-fluid">
+               <div class="panel panel-default">
+                  <div class="panel-body">
+      					<div class="row">
+                     	<div class="col-xs-12 col-sm-12 col-md-12">
+      	                  <h2 class="page-header">Inbox</h2>
+      	                  <ol class="breadcrumb">
+      								<li><a href="dashboard.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+      								<li><a href="dashinbox.html"><i class="fa fa-inbox"></i> Inbox</a></li>
+                              <li class="active"><i class="fa fa-envelope"></i> New Message</li>
+      	                  </ol>
+                        </div>
+                     </div>
+                     <div class="row mb15">
+                        <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
+                           <a href="dashinbox.html" class="text-muted">
+                              <i class="fa fa-arrow-left"></i><span class="mr8"><strong>Back to Inbox</strong></span>
+                           </a>                  
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                           <div id="inboxMsgInfo">
+                              <div class="panel panel-default">
+                                 <div class="panel-body">
+                                    <div class="inbox-msg-title">Message Subject</div>
+                                    <div class="inbox-msg-sender">
+                                       <img class="avatar hidden-xs" src="assets/img/avatar.jpg">
+                                       <div class="from"><span>Lukasz Holeczek</span>lukasz@holeczek.pl</div>
+                                       <div class="date"><span class="fa fa-paper-clip"></span> Today, <strong>3:47 PM</strong></div>
+                                    </div>
+                                    <div class="inbox-msg-content">
+                                       <p class="mb30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices nibh neque, nec euismod libero tempus in. Proin scelerisque lorem in maximus feugiat. Etiam auctor tincidunt est, ac fringilla arcu. Quisque rutrum eleifend dui, at rhoncus neque volutpat eget. Nullam non pharetra nunc, a molestie arcu. Aliquam erat volutpat.</p>
+                                       <blockquote class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices nibh neque, nec euismod libero tempus in. Proin scelerisque lorem in maximus feugiat. Etiam auctor tincidunt est, ac fringilla arcu. Quisque rutrum eleifend dui, at rhoncus neque volutpat eget. Nullam non pharetra nunc, a molestie arcu. Aliquam erat volutpat.</blockquote>
+                                    </div>
+                                    <div class="inbox-msg-reply">
+                                       <div class="form-group">
+                                          <textarea class="form-control" id="inboxMsgReply" rows="8" placeholder="Click here to reply"></textarea>
+                                       </div>
+                                       <button type="submit" class="btn btn-info pull-right">Send Message</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+        		</div>
+			</div>
+		</div>
+
+    	<script>
+         $(document).ready(function(){
+            $(".table-row").click(function() {
+               window.document.location = $(this).data("href");
+            });
+         });
+      </script> 
+    	
+	</body>
+</html>

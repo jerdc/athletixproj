@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    
+		<title>ATHLETIX</title>
+		
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/media.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="mainNav">
+<!-- 			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					   <a class="navbar-brand" href="index.html">ATHLETIX</a>
+			   	</div>
+			    	<div class="collapse navbar-collapse" id="navbarCollapse">
+			      	<ul class="nav navbar-nav">
+					      <li><a href="index.html">Home</a></li>
+			            <li><a href="events.html">Events</a></li>
+			            <li><a href="directory-listing.html">Directory Listing</a></li>
+			            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="articles.html">Articles</a></li>
+								</ul>
+							</li>
+			            <li><a href="contact.html">Contact Us</a></li>
+			      	</ul>
+						<ul class="nav navbar-nav navbar-right avatar">
+							<li class="dropdown dropdown-menu-right">
+								<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true" href="#">
+									<img src="assets/img/avatar.jpg" class="img-responsive">
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right" role="menu">
+									<li><a href="dashboard.html"><i class="fa fa-tachometer fa-fw" aria-hidden="true"></i>Dashboard</a></li>
+									<li><a href="create-event.html"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>Add Event</a></li>
+									<li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Settings</a></li>
+									<li><a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Edit Profile</a></li>
+									<li><a href="#"><i class="fa fa-feed fa-fw" aria-hidden="true"></i>Activity Feed</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="index.html"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav> -->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+			   	<div class="navbar-header">
+			   		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+			      	</button>
+			      	<a class="navbar-brand" href="index.html">ATHLETIX</a>
+			   	</div>
+			    	<div class="collapse navbar-collapse" id="navbarCollapse">
+			      	<ul class="nav navbar-nav">
+					      <li><a href="index.html">Home</a></li>
+			            <li><a href="events.html">Events</a></li>
+			            <li><a href="directory-listing.html">Directory Listing</a></li>
+			            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="articles.html">Articles</a></li>
+								</ul>
+							</li>
+			            <li><a href="contact.html">Contact Us</a></li>
+			      	</ul>
+			      	<ul class="nav navbar-nav navbar-right">
+			      		<li><button type="button" class="btn btn-link btn-grey" data-toggle="modal" data-target="#login">Log In</button></li>
+			      		<li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#register">Register</button></li>
+			      	</ul>
+			      </div>
+			   </div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				   <div class="modal-dialog" role="document">
+				   	<div class="modal-content">
+					      <div class="modal-header">
+						      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						      <h4 class="modal-title" id="login">Log in to your account</h4>
+					      </div>
+					      <div class="modal-body">
+					      	<div class="social-login">
+					      		<div class="row">
+					      			<div class="col-md-6 mb10">
+				            			<a href="" class="btn btn-block btn-facebook"><i class="fa fa-facebook"></i>Log in with Facebook</a>
+					      			</div>
+					      			<div class="col-md-6">
+				            			<a href="" class="btn btn-block btn-linkedin"><i class="fa fa-linkedin"></i>Log in with LinkedIn</a>
+					      			</div>
+					      		</div>
+			            	</div>
+			            	<div class="strikethru">
+									<div class="sep"></div>
+									<div class="text"><span>or</span></div>
+			            	</div>
+						     	<form class="modal-form">
+									<div class="form-group">
+										<input type="email" class="form-control" id="InputEmail" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="Password">
+									</div>						  
+								   <button type="submit" class="btn btn-primary">Log In</button></href>
+						  			<div class="checkbox">
+										<label><input type="checkbox">Remember Me</label>
+								   </div>
+								   <div class="help-block bhvr pull-right">
+								  		<a href="#">Forgot Password?</a>
+								   </div>
+								</form>
+					      </div>
+					      <div class="modal-footer">
+								<p class="text-center pmb0 bhvr">New to Athletix? <a href="#"><strong>Register</strong></a></p>
+					      </div>
+				    	</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				   <div class="modal-dialog" role="document">
+				      <div class="modal-content">
+					      <div class="modal-header">
+						      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						      <h4 class="modal-title" id="register">Register for a new account</h4>
+					      </div>
+					      <div class="modal-body">
+					      	<form class="modal-form">
+									<div class="form-group">
+										<input type="text" class="form-control" id="InputName" placeholder="Name">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="InputEmail" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="Re-enter Password">
+									</div>
+									<button type="submit" class="btn btn-primary">Sign Up</button>
+								</form>
+								<div class="disclaimer text-center">
+									<p class="pmb0 bhvr">By registering, you agree to our 
+										<a href="#" target="_blank">Terms of Service</a>, and 
+										<a href="#" target="_blank">Privacy Policy</a>.
+									</p>
+								</div>
+					   	</div>
+					      <div class="modal-footer">
+					      	<p class="text-center pmb0 bhvr">Already have an account? <a href="#"><strong>Log In</strong></a></p>
+					      </div>
+				    	</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+	   <div id="hero" class="carousel slide" data-ride="carousel">
+	    	<ol class="carousel-indicators">
+		      <li data-target="#hero" data-slide-to="0" class="active"></li>
+		      <li data-target="#hero" data-slide-to="1"></li>
+		      <li data-target="#hero" data-slide-to="2"></li>
+	      </ol>
+		   <div class="carousel-inner" role="listbox">
+		      <div class="item fill active">
+		      	<img class="first-slide img-responsive" src="assets/img/c1.jpg" alt="First Slide">
+		      	<div class="container">
+						<div class="carousel-caption">
+							<div class="full-width">
+								<h1>Lorem ipsum</h1>
+								<p>Lorem ipsum dolor sit amet</p>
+								<!-- <a href="#"><button type="button" class="btn btn-success btn-lg">Sign Up</button></a> -->
+							</div>
+						</div>
+					</div>
+		      </div>
+		      <div class="item fill">
+		      	<img class="second-slide img-responsive" src="assets/img/c2.jpg" alt="Second Slide">
+		      	<div class="container">
+						<div class="carousel-caption">
+							<div class="full-width">
+								<h1>Lorem ipsum</h1>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+						</div>
+					</div>
+		      </div>
+		      <div class="item fill">
+		      	<img class="third-slide img-responsive" src="assets/img/c3.jpg" alt="Third Slide">
+		      	<div class="container">
+						<div class="carousel-caption">
+							<div class="full-width">
+								<h1>Lorem ipsum</h1>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+						</div>
+					</div>
+		      </div>
+			</div>
+			<a class="left carousel-control" href="#hero" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a class="right carousel-control" href="#hero" data-slide="next">
+				<span class="icon-next"></span>
+			</a> 
+	   </div>
+      <div class="intro content">
+      	<div class="container">
+      		<div class="row intro-table">
+      			<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10">
+      				<div class="row">
+      					<div class="col-xs-12 col-sm-4 intro-circle">
+      						<img src="assets/img/r1.png" class="img-circle img-responsive cntr mb15">
+      						<div class="intro-des">
+      							<h4>Title</h4>
+      							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+      						</div>
+      					</div>
+		      			<div class="col-xs-12 col-sm-4 intro-circle">
+		      				<img src="assets/img/r1.png" class="img-circle img-responsive cntr mb15">
+		      				<div class="intro-des">
+		      					<h4>Title</h4>
+		      					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+		      				</div>
+		      			</div>
+		      			<div class="col-xs-12 col-sm-4 intro-circle">
+		      				<img src="assets/img/r1.png" class="img-circle img-responsive cntr mb15">
+		      				<div class="intro-des">
+		      					<h4>Title</h4>
+		      					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+		      				</div>
+		      			</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+		<div class="upcoming-events content">
+    		<div class="container">
+    			<div class="row mb10">
+	    			<div class="col-md-9 col-sm-6 col-xs-8">
+	    				<h3>Upcoming Events</h3>
+	    			</div>
+    				<div class="col-md-3 col-sm-6 col-xs-4">
+						<div class="controls pull-right">
+							<a class="left fa fa-chevron-left btn btn-warning" href="#slide" data-slide="prev"></a>
+							<a class="right fa fa-chevron-right btn btn-warning" href="#slide" data-slide="next"></a>
+						</div>
+          		</div>
+    			</div>
+				<div id="slide" class="carousel slide" data-ride="carousel" data-interval="false">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<div class="thumbnail">
+							         <div class="thumb thumb-img-wrap">
+							         	<img class="group list-group-image thumb-img" src="http://placehold.it/400x250/000" alt=""/>
+							         	<!-- <img class="group list-group-image thumb-img" src="assets/img/f1.jpg" alt=""/> -->
+							         </div>
+						         	<div class="caption">
+							            <a href="event-detail.html"><h4 class="group inner list-group-item-heading">Sample Event</h4></a>
+							            <p class="group inner list-group-item-text">Event description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod. 
+						            	</p>
+							            <div class="row">
+							               <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-map-marker fa-fw"></i>Location</span>
+						                  </div>
+							            </div>
+							            <div class="row">
+						             	   <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-calendar fa-fw"></i>09/30/2016</span>
+							               </div>
+							         	</div>
+							      	</div>
+						      	</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+									<div class="thumbnail">
+							         <div class="thumb thumb-img-wrap">
+							         	<img class="group list-group-image thumb-img" src="http://placehold.it/400x250/000" alt=""/>
+							         </div>
+						         	<div class="caption">
+							            <a href="event-detail.html"><h4 class="group inner list-group-item-heading">Sample Event</h4></a>
+							            <p class="group inner list-group-item-text">Event description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod. 
+							            </p>
+							            <div class="row">
+							               <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-map-marker fa-fw"></i>Location</span>
+						                  </div>
+							            </div>
+							            <div class="row">
+						             	   <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-calendar fa-fw"></i>09/30/2016</span>
+							               </div>
+							         	</div>
+							      	</div>
+						      	</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+									<div class="thumbnail">
+							         <div class="thumb thumb-img-wrap">
+							         	<img class="group list-group-image thumb-img" src="http://placehold.it/400x250/000" alt=""/>
+							         </div>
+						         	<div class="caption">
+							            <a href="event-detail.html"><h4 class="group inner list-group-item-heading">Sample Event</h4></a>
+							            <p class="group inner list-group-item-text">Event description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod. 
+							            </p>
+							            <div class="row">
+							               <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-map-marker fa-fw"></i>Location</span>
+						                  </div>
+							            </div>
+							            <div class="row">
+						             	   <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-calendar fa-fw"></i>09/30/2016</span>
+							               </div>
+							         	</div>
+							      	</div>
+						      	</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<div class="thumbnail">
+							         <div class="thumb thumb-img-wrap">
+							         	<img class="group list-group-image thumb-img" src="http://placehold.it/400x250/000" alt=""/>
+							         </div>
+						         	<div class="caption">
+							            <a href="event-detail.html"><h4 class="group inner list-group-item-heading">Sample Event</h4></a>
+							            <p class="group inner list-group-item-text">Event description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod. 
+							            </p>
+							            <div class="row">
+							               <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-map-marker fa-fw"></i>Location</span>
+						                  </div>
+							            </div>
+							            <div class="row">
+						             	   <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-calendar fa-fw"></i>09/30/2016</span>
+							               </div>
+							         	</div>
+							      	</div>
+						      	</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+									<div class="thumbnail">
+							         <div class="thumb thumb-img-wrap">
+							         	<img class="group list-group-image thumb-img" src="http://placehold.it/400x250/000" alt=""/>
+							         </div>
+						         	<div class="caption">
+							            <a href="event-detail.html"><h4 class="group inner list-group-item-heading">Sample Event</h4></a>
+							            <p class="group inner list-group-item-text">Event description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod. 
+						            	</p>
+							            <div class="row">
+							               <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-map-marker fa-fw"></i>Location</span>
+						                  </div>
+							            </div>
+							            <div class="row">
+						             	   <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-calendar fa-fw"></i>09/30/2016</span>
+							               </div>
+							         	</div>
+							      	</div>
+						      	</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+									<div class="thumbnail">
+							         <div class="thumb thumb-img-wrap">
+							         	<img class="group list-group-image thumb-img" src="http://placehold.it/400x250/000" alt=""/>
+							         </div>
+						         	<div class="caption">
+							            <a href="event-detail.html"><h4 class="group inner list-group-item-heading">Sample Event</h4></a>
+							            <p class="group inner list-group-item-text">Event description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod. 
+						            	</p>
+							            <div class="row">
+							               <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-map-marker fa-fw"></i>Location</span>
+						                  </div>
+							            </div>
+							            <div class="row">
+						             	   <div class="col-xs-12 col-sm-12 col-md-12 thumb-details">
+						                  	<span><i class="fa fa-calendar fa-fw"></i>09/30/2016</span>
+							               </div>
+							         	</div>
+							      	</div>
+						      	</div>
+								</div>
+							</div>
+						</div>
+				   </div>
+				</div>
+		 	</div> 
+		</div>
+    	<footer>
+	    	<div class="footer-top">
+		    	<div class="container">
+			   	<div class="row">
+		    			<div class="col-xs-12 col-sm-12 col-md-6">
+			    			<div class="footer-about">
+				    			<h3>Athletix</h3>
+				    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio mauris, imperdiet vehicula tellus ac, rutrum feugiat nisl. Etiam varius nunc in eros cursus, blandit elementum tortor semper. In magna nisl, ultricies in odio vitae, dignissim tristique erat.</p>
+			    			</div>
+		    			</div>
+				    	<div class="col-xs-12 col-sm-4 col-md-2">
+					    	<div class="footer-qlinks">
+					    		<h4>Quick Links</h4>
+						    	<ul>
+							    	<li><a href="index.html">Home</a></li>
+							    	<li><a href="events.html">Events</a></li>
+							    	<li><a href="#" >Directory Listing</a></li>
+							    	<li><a href="#">News</a></li>
+							    	<li><a href="contact.html">Contact Us</a></li>
+						    	</ul>
+					    	</div>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-4 col-md-2">
+					    	<div class="footer-qlinks">
+						    	<h4>Quick Links</h4>
+						    	<ul>
+							    	<li><a href="index.html">Home</a></li>
+							    	<li><a href="events.html">Events</a></li>
+							    	<li><a href="#">Directory Listing</a></li>
+							    	<li><a href="#">News</a></li>
+							    	<li><a href="contact.html">Contact Us</a></li>
+						    	</ul>
+					    	</div>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-4 col-md-2">
+					    	<div class="footer-qlinks">
+					    		<h4>Quick Links</h4>
+						    	<ul>
+							    	<li><a href="index.html">Home</a></li>
+							    	<li><a href="events.html">Events</a></li>
+							    	<li><a href="#" >Directory Listing</a></li>
+							    	<li><a href="#">News</a></li>
+							    	<li><a href="contact.html">Contact Us</a></li>
+						    	</ul>
+					    	</div>
+					   </div>
+				   </div>
+			   </div>
+			</div>
+	    	<div class="footer-bottom">
+	    		<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-sm-6 col-xs-12">
+			    			<p class="copyright pmb0">Copyright © 2016 Athletix. All Rights Reserved.</p>
+		    			</div>
+		    			<div class="col-md-4 col-sm-6 col-xs-12">
+			    			<div class="footer-social pull-right">
+					    		<ul>
+						    		<li><a href="https://www.facebook.com/" target="_blank" title="Follow us on Facebook"><i class="fa fa-facebook"></i></li>
+						    		<li><a href="https://www.linkedin.com/" target="_blank" title="Follow us on LinkedIn"><i class="fa fa-linkedin"></i></li>
+					    		</ul>
+			    			</div>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>
+    	</footer>
+    
+    	<script>
+	    	$(document).ready(function(){
+
+	    		history.pushState("", document.title, window.location.pathname);
+
+	    		// Fullscreen Carousel
+	    		var $item = $('#hero .carousel .item');
+				var $wHeight = $(window).height();
+
+				$item.eq(0).addClass('active');
+				$item.height($wHeight); 
+				$item.addClass('fullscreen');
+
+				$('.carousel img').each(function() {
+					var $src = $(this).attr('src');
+					var $color = $(this).attr('data-color');
+					$(this).parent().css({
+						'background-image' : 'url(' + $src + ')',
+						'background-color' : $color
+					});
+					$(this).remove();
+				});
+
+				$(window).on('resize', function (){
+					$wHeight = $(window).height();
+					$item.height($wHeight);
+				});
+			});
+    	</script> 
+    	
+	</body>
+</html>
