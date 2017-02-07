@@ -38,6 +38,7 @@
 			    	<div class="collapse navbar-collapse" id="navbarCollapse">
 			      	<ul class="nav navbar-nav">
 					      <li><a href="index.html">Home</a></li>
+					      <li><a href="about.html">About</a></li>
 			            <li><a href="events.html">Events</a></li>
 			            <li><a href="directory-listing.html">Directory Listing</a></li>
 			            <li class="dropdown">
@@ -83,6 +84,7 @@
 			    	<div class="collapse navbar-collapse" id="navbarCollapse">
 			      	<ul class="nav navbar-nav">
 					      <li><a href="index.html">Home</a></li>
+					      <li><a href="about.html">About</a></li>
 			            <li><a href="events.html">Events</a></li>
 			            <li><a href="directory-listing.html">Directory Listing</a></li>
 			            <li class="dropdown">
@@ -191,168 +193,82 @@
 				</div>
 			</div>
 		</div>
-		<div class="inner-banner hidden-xs">
+		<div class="event-detail content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-offset-1 col-md-10">
-						<div class="row">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<div class="event-poster-wrap pull-right">
-									<div class="event-poster">
-										<div class="event-poster-img">
-											<img src="assets/img/r1.png" class="img-responsive">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="event-intro">
-									<h2>Event Name</h2>
-									<p class="lead">Tagline goes here lorem ipsum dolor sit amet</p>
-									<h4><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>Location</h4>
-									<h4><i class="fa fa-tag fa-fw" aria-hidden="true"></i>Running</h4>
-									<h4><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>09/17/2016 - 8:00 am</h4>
-								</div>
-							</div>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div id="eventOverview" class="eDetail-title">
+							<h3>Event Name Sample</h3>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="event-main-nav">
-			<div class="container">
 				<div class="row">
-					<div class="event-nav-btn">
-						<ul>
-							<li id="eOver"><a href="#eventOverview"><i class="fa fa-list-ul fa-2x" aria-hidden="true"></i>Overview</a></li>
-							<li id="eLoc"><a href="#eventLocation"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>Location</a></li>
-							<li id="ePart"><a href="#eventParticipants"><i class="fa fa-users fa-2x" aria-hidden="true"></i>Participants</a></li>
-							<li><a href=""><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>Join</a></li>
-							<li><a href="events.html"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>Back to Events</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="eventDetails" class="events content">
-			<div class="container">
-				<!-- OVERVIEW -->
-				<div id="eventOverview">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10">
-							<div>
-								<div class="event-name text-center">
-									<h2>Event Name</h2>
-									<p class="lead">Tagline goes here lorem ipsum dolor sit amet</p>
-								</div>
-								<div class="event-desc">
-									<div class="poster">
-										<img src="assets/img/poster1.jpg" class="img-responsive">	
-									</div>						
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut metus efficitur, porttitor lacus id, porta augue. Phasellus auctor sem arcu, ut sagittis nisi tincidunt ut. Curabitur viverra felis sit amet rutrum aliquam. Nam sagittis sollicitudin molestie. Donec elementum blandit neque, ut lacinia enim accumsan ut. Aliquam erat volutpat. Duis risus ex, maximus id dolor eget, lacinia sodales sem. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ornare vel sem sit amet pellentesque. Vestibulum molestie tortor et ipsum feugiat, eu accumsan nisl interdum.</p>
-								</div>
-								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-md-6">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h3 class="panel-title"><i class="fa fa-futbol-o" aria-hidden="true"></i>Sport</h3>
-											</div>
-											<div class="panel-body">
-												<p>Running</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h3 class="panel-title"><i class="fa fa-tag" aria-hidden="true"></i>Type</h3>
-											</div>
-											<div class="panel-body">
-												<p>Individual Sports</p>
-											</div>
-										</div>
-									</div>
-								</div>
+					<div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-4 col-md-push-8">
+						<div class="eDetail-side">
+							<button type="button" class="btn btn-primary"><i class="fa fa-user-plus"></i> Join</button>
+							<div class="eDetail-poster">
+								<img src="assets/img/poster1.jpg" class="img-responsive eDetail-img">
+							</div>
+							<div class="ad-med-rectangle hidden-xs">
+								<img src="assets/img/ad-300x250.jpg">
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- LOCATION -->
-				<div id="eventLocation">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10">
-							<div>
-								<div class="event-map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.2049124545993!2d121.05200165009347!3d14.530268482642752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8c6fcc3089d%3A0x8d15e88a89220714!2sMckinley+Hill+Stadium!5e0!3m2!1sen!2sph!4v1473965726756" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h3 class="panel-title"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</h3>
+					<div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
+						<div class="eDetail-container">
+							<div class="eDetail-tagline">
+								<p class="lead">Tagline goes here, lorem ipsum dolor sit amet.</p>
+							</div>
+							<div class="eDetail-description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos tenetur officiis dolore, fuga, laudantium, odio quo distinctio voluptates illo excepturi ducimus. Nobis, repellat saepe obcaecati, necessitatibus amet alias tempora? Quaerat, eius, veniam. Dolores unde harum, accusantium officiis quasi neque ducimus recusandae quisquam, dignissimos, eum amet repellendus id labore, mollitia aspernatur explicabo eos quidem. Natus, rem eveniet voluptatem odit veniam libero iste, sed? Qui commodi deleniti, fugiat, reprehenderit velit quasi aliquam accusantium harum architecto asperiores ipsa laudantium, at explicabo quidem obcaecati.</p>
+								<br>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sequi omnis voluptatibus id, commodi tempora. Eligendi voluptatum perferendis, magnam esse eveniet laudantium, quibusdam cupiditate, nulla earum quod veritatis impedit non.</p>
+							</div>
+							<div class="row eDetail-info">
+								<div class="col-md-6">
+									<div class="mb30">
+										<h4>Date</h4>
+										<ul class="">
+											<li><strong>Start:</strong> <em>September 17, 2017</em></li>
+											<li><strong>End:</strong> <em>September 17, 2017</em></li>
+										</ul>
 									</div>
-									<div class="panel-body">
-										<p>Mckinley Hill Stadium, Taguig City</p>
+									<div class="mb30">
+										<h4>Time</h4>
+										<ul>
+											<li><strong>Start:</strong> <em>8:00 am</em></li>
+											<li><strong>End:</strong> <em>1:00 pm</em></li>
+										</ul>
 									</div>
 								</div>
+								<div class="col-md-6">
+									<div class="mb30">
+										<h4>Sport</h4>
+										<p>Running</p>
+									</div>
+									<div class="mb30">
+										<h4>Type</h4>
+										<p>Individual Sports</p>
+									</div>
+								</div>
+							</div>
+							<div id="eventLocation" class="eDetail-location">
+								<div class="eDetail-address">
+									<h4>Location</h4>
+									<p>Mckinley Hill Stadium, Taguig City</p>
+								</div>
+								<div class="eDetail-map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.2049124545993!2d121.05200165009347!3d14.530268482642752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8c6fcc3089d%3A0x8d15e88a89220714!2sMckinley+Hill+Stadium!5e0!3m2!1sen!2sph!4v1473965726756" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+								</div>
+							</div>
+							<div id="eventParticipants" class="eDetail-participants">
 								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-md-6">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h3 class="panel-title"><i class="fa fa-calendar" aria-hidden="true"></i>Start Date</h3>
-											</div>
-											<div class="panel-body">
-												<p>09/30/2016</p>
-											</div>
-										</div>
+									<div class="col-md-12">
+										<h4>Participants</h4>
 									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h3 class="panel-title"><i class="fa fa-calendar" aria-hidden="true"></i>End Date</h3>
-											</div>
-											<div class="panel-body">
-												<p>09/30/2016</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-6">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 class="panel-title"><i class="fa fa-clock-o" aria-hidden="true"></i>Start Time</h3>
-										</div>
-										<div class="panel-body">
-											<p>6:00 am</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-6">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 class="panel-title"><i class="fa fa-clock-o" aria-hidden="true"></i>End Time</h3>
-										</div>
-										<div class="panel-body">
-											<p>12:00 nn</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- PARTICIPANTS -->
-				<div id="eventParticipants">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10">
-							<div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h3 class="panel-title"><i class="fa fa-users" aria-hidden="true"></i>Participants</h3>
-									</div>
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="mb30">
 												<div class="members">
 													<a href="#">
 														<div class="mem-img">
@@ -394,47 +310,47 @@
 													</a>
 												</div>
 											</div>
-											<div class="col-md-6">
-												<div class="members">
-													<a href="#">
-														<div class="mem-img">
-															<img src="assets/img/avatar.jpg" class="img-circle">
-														</div>
-														<div class="mem-name">John Doe</div>
-													</a>
-												</div>
-												<div class="members">
-													<a href="#">
-														<div class="mem-img">
-															<img src="assets/img/avatar.jpg" class="img-circle">
-														</div>
-														<div class="mem-name">John Doe</div>
-													</a>
-												</div>
-												<div class="members">
-													<a href="#">
-														<div class="mem-img">
-															<img src="assets/img/avatar.jpg" class="img-circle">
-														</div>
-														<div class="mem-name">John Doe</div>
-													</a>
-												</div>
-												<div class="members">
-													<a href="#">
-														<div class="mem-img">
-															<img src="assets/img/avatar.jpg" class="img-circle">
-														</div>
-														<div class="mem-name">John Doe</div>
-													</a>
-												</div>
-												<div class="members">
-													<a href="#">
-														<div class="mem-img">
-															<img src="assets/img/avatar.jpg" class="img-circle">
-														</div>
-														<div class="mem-name">John Doe</div>
-													</a>
-												</div>
+										</div>
+										<div class="col-md-6">
+											<div class="members">
+												<a href="#">
+													<div class="mem-img">
+														<img src="assets/img/avatar.jpg" class="img-circle">
+													</div>
+													<div class="mem-name">John Doe</div>
+												</a>
+											</div>
+											<div class="members">
+												<a href="#">
+													<div class="mem-img">
+														<img src="assets/img/avatar.jpg" class="img-circle">
+													</div>
+													<div class="mem-name">John Doe</div>
+												</a>
+											</div>
+											<div class="members">
+												<a href="#">
+													<div class="mem-img">
+														<img src="assets/img/avatar.jpg" class="img-circle">
+													</div>
+													<div class="mem-name">John Doe</div>
+												</a>
+											</div>
+											<div class="members">
+												<a href="#">
+													<div class="mem-img">
+														<img src="assets/img/avatar.jpg" class="img-circle">
+													</div>
+													<div class="mem-name">John Doe</div>
+												</a>
+											</div>
+											<div class="members">
+												<a href="#">
+													<div class="mem-img">
+														<img src="assets/img/avatar.jpg" class="img-circle">
+													</div>
+													<div class="mem-name">John Doe</div>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -705,37 +621,6 @@
 				$('#startDateTime').datetimepicker();
 				$('#endDateTime').datetimepicker();
 
-				// Sticky Nav
-				$(window).scroll(function(){    
-					if ($(this).scrollTop() > 300){ 
-						$('.event-nav-btn').addClass('fixed');
-						$('#eventDetails').addClass('mt60');
-					}
-					else {
-						$('.event-nav-btn').removeClass('fixed');
-						$('#eventDetails').removeClass('mt60');
-					}
-				});
-
-				// Events
-				$("#eventLocation").hide();
-				$("#eventParticipants").hide();
-
-				$("#eOver").click(function(){
-					$("#eventOverview").show()
-					$("#eventLocation").hide()
-					$("#eventParticipants").hide()
-				});
-				$("#eLoc").click(function(){
-					$("#eventOverview").hide()
-					$("#eventLocation").show()
-					$("#eventParticipants").hide()
-				});
-				$("#ePart").click(function(){
-					$("#eventOverview").hide()
-					$("#eventLocation").hide()
-					$("#eventParticipants").show()
-				});
 			});
     	</script> 
 
